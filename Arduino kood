@@ -1,0 +1,56 @@
+int ajavahemik = 1;
+int vahe = 2.1;
+int LED1 = 2;
+int LED2 = 3;
+int LED3 = 4;
+int LED4 = 5;
+int LED5 = 6;
+int LED6 = 7;
+int LED7 = 8;
+int LED8 = 9;
+
+void setup(){
+pinMode(LED1, OUTPUT);
+pinMode(LED2, OUTPUT);
+pinMode(LED3, OUTPUT);
+pinMode(LED4, OUTPUT);
+pinMode(LED5, OUTPUT);
+pinMode(LED6, OUTPUT);
+pinMode(LED7, OUTPUT);
+pinMode(LED8, OUTPUT);
+}
+
+int H[] = {256, 24, 24, 256};
+int K[] = {254, 24, 54, 195};
+int V[] = {254, 3, 254, 0};
+
+void kuvarida(int rida){
+int ise;
+ise = rida;
+if (ise>=128)  {digitalWrite(LED1, HIGH); ise-=128;}  else {digitalWrite(LED1, LOW);}
+if (ise>=64)  {digitalWrite(LED2, HIGH); ise-=64;}  else {digitalWrite(LED2, LOW);}
+if (ise>=32)  {digitalWrite(LED3, HIGH); ise-=32;}  else {digitalWrite(LED3, LOW);}
+if (ise>=16)  {digitalWrite(LED4, HIGH); ise-=16;}  else {digitalWrite(LED4, LOW);}
+if (ise>=8)  {digitalWrite(LED5, HIGH); ise-=8;}  else {digitalWrite(LED5, LOW);}
+if (ise>=4)  {digitalWrite(LED6, HIGH); ise-=4;}  else {digitalWrite(LED6, LOW);}
+if (ise>=2)  {digitalWrite(LED7, HIGH); ise-=2;}  else {digitalWrite(LED7, LOW);}
+if (ise>=1)  {digitalWrite(LED8, HIGH); ise-=1;}  else {digitalWrite(LED8, LOW);}
+}
+
+void t2ht(char c){
+if (c == 'H'){for (int i = 0; i <4; i++){kuvarida(H[i]);delay(ajavahemik);}kuvarida(0);}
+if (c == 'K'){for (int i = 0; i <4; i++){kuvarida(K[i]);delay(ajavahemik);}kuvarida(0);}
+if (c == 'V'){for (int i = 0; i <4; i++){kuvarida(V[i]);delay(ajavahemik);}kuvarida(0);}
+
+delay(vahe);
+}
+
+void tekst(char* s){
+for (int i = 0; i<=strlen(s); i++){
+t2ht(s[i]);
+}
+}
+
+void loop(){
+tekst("VKHK");
+}
