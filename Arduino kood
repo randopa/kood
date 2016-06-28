@@ -20,9 +20,39 @@ pinMode(LED7, OUTPUT);
 pinMode(LED8, OUTPUT);
 }
 
-int H[] = {256, 24, 24, 256};
-int K[] = {254, 24, 54, 195};
+int H[] = {255, 24, 24, 255};
+int K[] = {255, 24, 36, 195};
 int V[] = {254, 3, 254, 0};
+
+int A[] = {63, 68, 132, 68, 63};
+int B[] = {255, 153, 153, 102};
+int C[] = {126, 195, 195, 102};
+int D[] = {255, 129, 129, 126};
+int E[] = {255, 153, 153};
+int F[] = {255, 204, 204, 192};
+int G[] = {126, 129, 141, 78};
+int I[] = {195, 255, 255, 195};
+int J[] = {135, 129, 129, 255};
+int L[] = {255, 255, 3, 3};
+int M[] = {255, 96, 24, 6, 24, 96, 255};
+int N[] = {255, 96, 24, 6, 255};
+int O[] = {126, 129, 129, 126};
+int P[] = {255, 136, 136, 112};
+int Q[] = {126, 129, 129, 126, 1};
+int R[] = {255, 140, 138, 112};
+int S[] = {98, 153, 141, 66};
+int Z[] = {131, 141, 177, 193};
+int T[] = {192, 192, 255, 192, 192};
+int U[] = {254, 1, 1, 254};
+int W[] = {254, 1, 1, 30, 1, 1, 254};
+int X[] = {195, 54, 28, 54, 195};
+int Y[] = {195, 48, 31, 48, 195};
+int o1[] = {158, 33, 33, 158};
+int o2[] = {158, 161, 161, 158};
+int a1[] = {31, 164, 100, 164, 31};
+int u1[] = {63, 129, 1, 129, 63};
+int s1[] = {154, 105, 101, 146};
+int z1[] = {163, 101, 105, 177};
 
 void kuvarida(int rida){
 int ise;
@@ -42,6 +72,34 @@ if (c == 'H'){for (int i = 0; i <4; i++){kuvarida(H[i]);delay(ajavahemik);}kuvar
 if (c == 'K'){for (int i = 0; i <4; i++){kuvarida(K[i]);delay(ajavahemik);}kuvarida(0);}
 if (c == 'V'){for (int i = 0; i <4; i++){kuvarida(V[i]);delay(ajavahemik);}kuvarida(0);}
 
+if (c == 'A'){for (int i = 0; i <5; i++){kuvarida(A[i]);delay(ajavahemik);}kuvarida(0);}
+if (c == 'B'){for (int i = 0; i <4; i++){kuvarida(B[i]);delay(ajavahemik);}kuvarida(0);}
+if (c == 'C'){for (int i = 0; i <4; i++){kuvarida(C[i]);delay(ajavahemik);}kuvarida(0);}
+if (c == 'D'){for (int i = 0; i <4; i++){kuvarida(D[i]);delay(ajavahemik);}kuvarida(0);}
+if (c == 'E'){for (int i = 0; i <3; i++){kuvarida(E[i]);delay(ajavahemik);}kuvarida(0);}
+if (c == 'F'){for (int i = 0; i <4; i++){kuvarida(F[i]);delay(ajavahemik);}kuvarida(0);}
+if (c == 'G'){for (int i = 0; i <4; i++){kuvarida(G[i]);delay(ajavahemik);}kuvarida(0);}
+if (c == 'I'){for (int i = 0; i <4; i++){kuvarida(I[i]);delay(ajavahemik);}kuvarida(0);}
+if (c == 'J'){for (int i = 0; i <4; i++){kuvarida(J[i]);delay(ajavahemik);}kuvarida(0);}
+if (c == 'L'){for (int i = 0; i <4; i++){kuvarida(L[i]);delay(ajavahemik);}kuvarida(0);}
+if (c == 'M'){for (int i = 0; i <7; i++){kuvarida(M[i]);delay(ajavahemik);}kuvarida(0);}
+if (c == 'N'){for (int i = 0; i <5; i++){kuvarida(N[i]);delay(ajavahemik);}kuvarida(0);}
+if (c == 'O'){for (int i = 0; i <4; i++){kuvarida(O[i]);delay(ajavahemik);}kuvarida(0);}
+if (c == 'P'){for (int i = 0; i <4; i++){kuvarida(P[i]);delay(ajavahemik);}kuvarida(0);}
+if (c == 'Q'){for (int i = 0; i <5; i++){kuvarida(Q[i]);delay(ajavahemik);}kuvarida(0);}
+if (c == 'R'){for (int i = 0; i <4; i++){kuvarida(R[i]);delay(ajavahemik);}kuvarida(0);}
+if (c == 'S'){for (int i = 0; i <4; i++){kuvarida(S[i]);delay(ajavahemik);}kuvarida(0);}
+if (c == 'Z'){for (int i = 0; i <4; i++){kuvarida(Z[i]);delay(ajavahemik);}kuvarida(0);}
+if (c == 'T'){for (int i = 0; i <5; i++){kuvarida(T[i]);delay(ajavahemik);}kuvarida(0);}
+if (c == 'U'){for (int i = 0; i <4; i++){kuvarida(U[i]);delay(ajavahemik);}kuvarida(0);}
+if (c == 'W'){for (int i = 0; i <7; i++){kuvarida(W[i]);delay(ajavahemik);}kuvarida(0);}
+if (c == 'X'){for (int i = 0; i <5; i++){kuvarida(X[i]);delay(ajavahemik);}kuvarida(0);}
+if (c == 'Y'){for (int i = 0; i <5; i++){kuvarida(Y[i]);delay(ajavahemik);}kuvarida(0);}
+if (c == 'o1'){for (int i = 0; i <4; i++){kuvarida(o1[i]);delay(ajavahemik);}kuvarida(0);}
+if (c == 'o2'){for (int i = 0; i <4; i++){kuvarida(o2[i]);delay(ajavahemik);}kuvarida(0);}
+if (c == 'a1'){for (int i = 0; i <5; i++){kuvarida(a1[i]);delay(ajavahemik);}kuvarida(0);}
+if (c == 'u1'){for (int i = 0; i <5; i++){kuvarida(u1[i]);delay(ajavahemik);}kuvarida(0);}
+if (c == 's1'){for (int i = 0; i <4; i++){kuvarida(s1[i]);delay(ajavahemik);}kuvarida(0);}
 delay(vahe);
 }
 
