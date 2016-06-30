@@ -1,5 +1,5 @@
 int ajavahemik = 1;
-int vahe = 2.1;
+int vahe = 2;
 int LED1 = 2;
 int LED2 = 3;
 int LED3 = 4;
